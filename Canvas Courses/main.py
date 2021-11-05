@@ -1,5 +1,4 @@
 import requests
-from termcolor import colored as c
 from prettytable import PrettyTable
 
 url = "https://clevelandschools.instructure.com/api/v1/courses"
