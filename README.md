@@ -1,3 +1,3 @@
 # Random Projects
 ---
-1. Canvas courses web scrapper [✅]
+1. Canvas web scrapper [✅]
