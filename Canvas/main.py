@@ -93,7 +93,7 @@ def CheckModuleItems(class_id, module_id):
 
 while True:
   system("clear")
-  user_input = input(f'{s.m}1.{s.re} Check Courses\n{s.m}2.{s.re} Check Assignments\n{s.m}3.{s.re} Check Modules\n{s.m}4.{s.re} Check Module Data\nInput mode: {s.m}')
+  user_input = input(f'{s.m}1.{s.re} Get Courses\n{s.m}2.{s.re} Get Assignments\n{s.m}3.{s.re} Get Modules\n{s.m}4.{s.re} Get Module Data\nInput mode: {s.m}')
   if user_input.lower() in ('1', '2', '3', '4'):
     if user_input.lower() == '1': CheckCourses()
     if user_input.lower() == '2': CheckAssignments(input(f"{s.re}Input Course ID: {s.m}"))
