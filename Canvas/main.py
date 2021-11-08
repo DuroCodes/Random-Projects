@@ -1,11 +1,18 @@
+import json 
 import requests
 from os import system
 from datetime import datetime
 from prettytable import PrettyTable
 
-access_token = "11631~M36BGoMGtgtRoxrjThHE8OlWGaCaUiZPjWAxdimHp7x9Pl7eh8OZJmAN3bBgB78f"
+secret = open("secret.json")
+tokens = json.load(secret)
+secret.close()
+
+access_token = tokens["access_token"]
+school_code = tokens["school_code"]
+
 headers = {"Authorization": f"Bearer {access_token}"}
-canvas_link = "https://clevelandschools.instructure.com/api/v1/courses"
+canvas_link = f"https://{school_code}.instructure.com/api/v1/courses"
 check_date = datetime(day=datetime.now().day-1, month=datetime.now().month, year=datetime.now().year)
 
 class s:
