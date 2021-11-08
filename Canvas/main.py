@@ -1,5 +1,4 @@
-import json 
-import requests
+import json, requests
 from os import system
 from datetime import datetime
 from prettytable import PrettyTable
@@ -59,6 +58,7 @@ def CheckAssignments(class_id):
 def CheckModules(class_id):
   print(s.re)
   url = f"{canvas_link}/{str(class_id)}/modules"
+  r = requests.get(url, headers=headers).json()
 
   t = PrettyTable([f'{s.g}Name{s.re}', f'{s.y}ID{s.re}', f'{s.b}Items Count{s.re}'])
   t.align[f"{s.g}Name{s.re}"] = "l"
@@ -66,13 +66,11 @@ def CheckModules(class_id):
   t.align[f"{s.b}Items Count{s.re}"] = "l"
   t.sortby = f"{s.y}ID{s.re}"
 
-  r = requests.get(url, headers=headers).json()
   for k in r: t.add_row([f'{s.g}{k["name"]}{s.re}', f'{s.y}{k["id"]}{s.re}', f'{s.b}{k["items_count"]}{s.re}'])
-
   print(t)
+
 def CheckModuleItems(class_id, module_id):
   print(s.re)
-
   url = f"{canvas_link}/{str(class_id)}/modules/{str(module_id)}/items"
   r = requests.get(url, headers=headers).json()
 
@@ -87,9 +85,7 @@ def CheckModuleItems(class_id, module_id):
   t.sortby = f"{s.y}ID{s.re}"
 
   for k in r: t.add_row([f'{s.g}{k["title"]}{s.re}', f'{s.m}{k["type"]}{s.re}', f'{s.y}{k["id"]}{s.re}'])
-
   print(t)
-
 
 while True:
   system("clear")
