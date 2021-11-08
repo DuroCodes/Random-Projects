@@ -34,8 +34,9 @@ def CheckCourses():
   t = PrettyTable([f'{s.g}Name{s.re}', f'{s.y}ID{s.re}'])
   t.align[f'{s.g}Name{s.re}'] = "l"
   t.align[f'{s.y}ID{s.re}'] = "l"
+  t.sortby = f'{s.y}ID{s.re}'
 
-  for k in r: t.add_row([f'{s.g}{k.get("name",f"{s.r}Not Available")}{s.re}', f'{s.y}{k["id"]}{s.re}'])
+  for k in r: t.add_row([f'{s.g}{k.get("name",f"{s.r}Not Available")}{s.re}', f'{s.y}{k["id"]}{s.re}']) 
   print(t)
 def CheckAssignments(class_id):
   print(s.re)
@@ -49,7 +50,9 @@ def CheckAssignments(class_id):
   t.sortby = f'{s.b}Due Date{s.re}'
 
   for k in r: 
-    due_date = datetime.strptime(k.get("due_at",f"{s.r}N/A")[:10], "%Y-%m-%d")
+    due_time = k.get("due_at",f"{s.r}1969-01-01")
+    if due_time is None: due_time = f"1969-01-01"
+    due_date = datetime.strptime(due_time[:10], "%Y-%m-%d")
     if due_date >= check_date: t.add_row([f'{s.g}{k["name"]}{s.re}', f'{s.y}{k["id"]}{s.re}', f'{s.b}{k.get("due_at",f"{s.r}N/A")[:10]}{s.re}'+s.re])
   print(t)
 
@@ -57,6 +60,6 @@ while True:
   system("clear")
   user_input = input(f'{s.m}1.{s.re} Check Courses\n{s.m}2.{s.re} Check Assignments\nInput mode: {s.m}')
   if user_input.lower() in ('1', '2'):
-    if user_input.lower()  == '1': CheckCourses()
-    if user_input.lower()  == '2': CheckAssignments(input(f"{s.re}Input Course ID: {s.m}"))
+    if user_input.lower() == '1': CheckCourses()
+    if user_input.lower() == '2': CheckAssignments(input(f"{s.re}Input Course ID: {s.m}"))
     break
