@@ -2,7 +2,7 @@
 ---
 ### Canvas web scrapper [✅] (*Requires Python 3.6+*)
  1. Clone GitHub repository
- 2. Create secret.json inside of the directory of main.py: 
+ 2. Create `secret.json` inside of the directory of main.py: 
 ```json
 {
  "access_token": "<YOUR ACCESS TOKEN>",
