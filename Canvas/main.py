@@ -26,8 +26,9 @@ class s:
   w = '\033[37m'
   u = '\033[4m'
   re = '\033[0m'
+
 def CheckCourses():
-  
+  print(s.re)
   url = f"{canvas_link}"
   r = requests.get(url, headers=headers).json()
 
@@ -38,8 +39,9 @@ def CheckCourses():
 
   for k in r: t.add_row([f'{s.g}{k.get("name",f"{s.r}Not Available")}{s.re}', f'{s.y}{k["id"]}{s.re}']) 
   print(t)
+
 def CheckAssignments(class_id):
-  
+  print(s.re)
   url = f"{canvas_link}/{str(class_id)}/assignments?per_page=100"
   r = requests.get(url, headers=headers).json()
 
@@ -56,7 +58,7 @@ def CheckAssignments(class_id):
     if due_date >= check_date: t.add_row([f'{s.g}{k["name"]}{s.re}', f'{s.y}{k["id"]}{s.re}', f'{s.b}{k.get("due_at",f"{s.r}N/A")[:10]}{s.re}'+s.re])
   print(t)
 def CheckModules(class_id):
-  
+  print(s.re)
   url = f"{canvas_link}/{str(class_id)}/modules"
   r = requests.get(url, headers=headers).json()
 
@@ -70,15 +72,14 @@ def CheckModules(class_id):
   print(t)
 
 def CheckModuleItems(class_id, module_id):
-  
+  print(s.re)
   url = f"{canvas_link}/{str(class_id)}/modules/{str(module_id)}/items"
   r = requests.get(url, headers=headers).json()
 
   module = requests.get(f"{canvas_link}/{str(class_id)}/modules/{str(module_id)}", headers=headers).json()
-  module_name = module["name"]
 
   t = PrettyTable([f"{s.g}Title{s.re}", f"{s.m}Type{s.re}", f"{s.y}ID{s.re}"])
-  t.title = f'{s.b}{module_name}{s.re}'
+  t.title = f'{s.b}{module["name"]}{s.re}'
   t.align[f"{s.g}Title{s.re}"] = "l"
   t.align[f"{s.m}Type{s.re}"] = "l"
   t.align[f"{s.y}ID{s.re}"] = "l"
@@ -90,8 +91,7 @@ def CheckModuleItems(class_id, module_id):
 while True:
   system("clear")
   user_input = input(f'{s.m}1.{s.re} Get Courses\n{s.m}2.{s.re} Get Assignments\n{s.m}3.{s.re} Get Modules\n{s.m}4.{s.re} Get Module Data\nInput mode: {s.m}')
-  print(s.re)
-  if user_input.lower() in ('1', '2', '3', '4', '404'):
+  if user_input.lower() in ('1', '2', '3', '4'):
     if user_input.lower() == '1': CheckCourses()
     if user_input.lower() == '2': CheckAssignments(input(f"{s.re}Input Course ID: {s.m}"))
     if user_input.lower() == '3': CheckModules(input(f"{s.re}Input Course ID: {s.m}"))
