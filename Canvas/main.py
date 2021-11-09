@@ -29,7 +29,7 @@ class s:
 
 def CheckCourses():
   print(s.re)
-  url = f"{canvas_link}"
+  url = f"{canvas_link}?per_page=100"
   r = requests.get(url, headers=headers).json()
 
   t = PrettyTable([f'{s.g}Name{s.re}', f'{s.y}ID{s.re}'])
