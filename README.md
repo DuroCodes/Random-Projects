@@ -1,12 +1,13 @@
 # Random Projects
 ---
-1. Canvas web scrapper [✅]
- - Clone GitHub repository and create secret.json inside of the directory of main.py: 
+### Canvas web scrapper [✅] (*Requires Python 3.6+*)
+ 1. Clone GitHub repository and create secret.json inside of the directory of main.py: 
 ```json
 {
  "access_token": "<YOUR ACCESS TOKEN>",
  "school_code": "<YOUR SCHOOL CODE>"
 }
 ```
-- Run `python3 main.py`
-- Requires Python 3.6+
+2. Run `python3 main.py`
+
+:bowtie:
