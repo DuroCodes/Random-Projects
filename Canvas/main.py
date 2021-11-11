@@ -2,7 +2,7 @@ import json, requests
 from os import system
 from datetime import datetime
 from prettytable import PrettyTable
-from pprint import pprint
+
 try:
   secret = open("secret.json")
   tokens = json.load(secret)
@@ -33,8 +33,7 @@ try:
     r = requests.get(url, headers=headers).json()
 
     t = PrettyTable([f'{s.g}Name{s.re}', f'{s.y}ID{s.re}'])
-    t.align[f'{s.g}Name{s.re}'] = "l"
-    t.align[f'{s.y}ID{s.re}'] = "l"
+    t.align = "l"
     t.sortby = f'{s.y}ID{s.re}'
 
     for k in r: t.add_row([f'{s.g}{k.get("name",f"{s.r}Not Available")}{s.re}', f'{s.y}{k["id"]}{s.re}']) 
@@ -46,9 +45,7 @@ try:
     r = requests.get(url, headers=headers).json()
 
     t = PrettyTable([f'{s.g}Name{s.re}', f'{s.y}ID{s.re}', f'{s.b}Due Date{s.re}'])
-    t.align[f'{s.g}Name{s.re}'] = "l"
-    t.align[f'{s.y}ID{s.re}'] = "l"
-    t.align[f'{s.b}Due Date{s.re}'] = "l"
+    t.align = "l"
     t.sortby = f'{s.b}Due Date{s.re}'
 
     for k in r: 
@@ -63,9 +60,7 @@ try:
     r = requests.get(url, headers=headers).json()
 
     t = PrettyTable([f'{s.g}Name{s.re}', f'{s.y}ID{s.re}', f'{s.b}Items Count{s.re}'])
-    t.align[f"{s.g}Name{s.re}"] = "l"
-    t.align[f"{s.y}ID{s.re}"] = "l"
-    t.align[f"{s.b}Items Count{s.re}"] = "l"
+    t.align = "l"
     t.sortby = f"{s.y}ID{s.re}"
 
     for k in r: t.add_row([f'{s.g}{k["name"]}{s.re}', f'{s.y}{k["id"]}{s.re}', f'{s.b}{k["items_count"]}{s.re}'])
@@ -80,9 +75,7 @@ try:
 
     t = PrettyTable([f"{s.g}Title{s.re}", f"{s.m}Type{s.re}", f"{s.y}ID{s.re}"])
     t.title = f'{s.b}{module["name"]}{s.re}'
-    t.align[f"{s.g}Title{s.re}"] = "l"
-    t.align[f"{s.m}Type{s.re}"] = "l"
-    t.align[f"{s.y}ID{s.re}"] = "l"
+    t.align = "l"
     t.sortby = f"{s.y}ID{s.re}"
 
     for k in r: t.add_row([f'{s.g}{k["title"]}{s.re}', f'{s.m}{k["type"]}{s.re}', f'{s.y}{k["id"]}{s.re}'])
