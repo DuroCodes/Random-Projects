@@ -22,7 +22,7 @@ r = requests.get(f"https://geolocation-db.com/json/{ip}").json()
 system("clear")
 
 information = {
-  0: ("IP", f'{r.get("ipv4","Not Available")}'),
+  0: ("IPv4", f'{r.get("IPv4","Not Available")}'),
   1: ("Country", f'{r["country_name"]} ({r["country_code"]})'),
   2: ("State", f'{r["state"]}'),
   3: ("City", f'{r["city"]}'),
