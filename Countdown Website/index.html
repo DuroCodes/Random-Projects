@@ -4,774 +4,85 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="yandex-verification" content="fb160d81e83556a6" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/en/manifest.json" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="preload" href="/fonts/calculatio.woff?4" as="font" crossorigin="anonymous" />
         <link rel="preload" href="/fonts/RobotoMono-Regular.woff2" as="font" crossorigin="anonymous" />
         <link rel="preload" href="/fonts/RobotoMono-Bold.woff2" as="font" crossorigin="anonymous" />
         <link rel="stylesheet" href="/css/app.css" />
-        <style>
-            .calc67-container:before {
-                content: "Advertisement";
-            }
-        </style>
-        <title>1 day From September 26, 2021 | Calculate</title>
-        <meta name="description" content="What Date is One day From September 26, 2021? What was 1 day From September 26, 2021? Add to or Subtract from a Date (Days/Weeks/Months or Years)" />
-        <link rel="canonical" href="https://calculat.io/en/date/count/1--days--from--26-september-2021" />
-        <meta property="og:title" content="1 day From September 26, 2021 | Calculate" />
-        <meta property="og:description" content="What Date is One day From September 26, 2021? What was 1 day From September 26, 2021? Add to or Subtract from a Date (Days/Weeks/Months or Years)" />
-        <meta property="og:url" content="https://calculat.io/en/date/count/1--days--from--26-september-2021" />
-        <meta name="twitter:title" content="1 day From September 26, 2021 | Calculate" />
-        <meta name="twitter:description" content="What Date is One day From September 26, 2021? What was 1 day From September 26, 2021? Add to or Subtract from a Date (Days/Weeks/Months or Years)" />
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "WebPage",
-                "name": "1 day From September 26, 2021 | Calculate",
-                "description": "What Date is One day From September 26, 2021? What was 1 day From September 26, 2021? Add to or Subtract from a Date (Days/Weeks/Months or Years)",
-                "url": "https://calculat.io/en/date/count/1--days--from--26-september-2021"
-            }
-        </script>
-        <link rel="alternate" hreflang="ru" href="https://calculat.io/ru/date/count/1--days--from--26-september-2021" />
-        <link rel="alternate" hreflang="en" href="https://calculat.io/en/date/count/1--days--from--26-september-2021" />
-        <script type="application/ld+json">
-            {
-                "@context": "https:\/\/schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "item": { "@id": "https:\/\/calculat.io\/en", "name": "Home", "image": null } },
-                    { "@type": "ListItem", "position": 2, "item": { "@id": "https:\/\/calculat.io\/en\/date", "name": "Date Calculators", "image": null } },
-                    { "@type": "ListItem", "position": 3, "item": { "@id": "https:\/\/calculat.io\/en\/date\/count", "name": "Add or Subtract Date", "image": null } },
-                    { "@type": "ListItem", "position": 4, "item": { "@id": "https:\/\/calculat.io\/en\/date\/count\/1--days--from--26-september-2021", "name": "1 day From September 26, 2021", "image": null } }
-                ]
-            }
-        </script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88299386-4"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "UA-88299386-4");
-            window.addEventListener("appinstalled", function (event) {
-                gtag("event", "PWA installed");
-            });
-        </script>
-        <link rel="amphtml" href="https://calculat.io/en/date/count/1--days--from--26-september-2021/amp" />
     </head>
     <body>
-        <link href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7957101469761625" rel="preload" as="script" crossorigin="anonymous" />
+        <div class="message is-primary">
+            <div class="message-header message-header--main"><h2 class="message-title">Countdown From September 27, 2021:</h2></div>
+            <div class="message-body is-size-4"><canvas class="countdown" id="countdown"></canvas></div>
+        </div>
         <script>
-            window.calculatio = { locale: "en" };
-            let loadedScripts = [];
-            let loadScriptAsync = function (uri, delay = 0, anonymous = false) {
-                return new Promise(function (resolve, reject) {
-                    setTimeout(function () {
-                        if (loadedScripts.includes(uri)) {
-                            return resolve();
-                        }
-                        loadedScripts.push(uri);
-                        let tag = document.createElement("script");
-                        tag.src = uri;
-                        tag.async = true;
-                        if (anonymous) {
-                            tag.crossOrigin = "anonymous";
-                        }
-                        tag.onload = function () {
-                            return resolve();
-                        };
-                        let firstScriptTag = document.getElementsByTagName("script")[0];
-                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                    }, delay);
-                });
+            let ringer = {
+                rings: { Days: { s: 86400000, max: 365 }, Hours: { s: 3600000, max: 24 }, Minutes: { s: 60000, max: 60 }, Seconds: { s: 1000, max: 60 } },
+                r_count: 4,
+                r_spacing: 10,
+                r_size: 100,
+                r_thickness: 5,
+                update_interval: 500,
+                init: function () {
+                    let $r = ringer;
+                    $r.size = { w: ($r.r_size + $r.r_thickness) * $r.r_count + $r.r_spacing * ($r.r_count - 1), h: $r.r_size + $r.r_thickness };
+                    $r.cvs = document.getElementById("countdown");
+                    $r.cvs.setAttribute("width", $r.size.w);
+                    $r.cvs.setAttribute("height", $r.size.h);
+                    $r.ctx = $r.cvs.getContext("2d");
+                    $r.ctx.textAlign = "center";
+                    $r.actual_size = $r.r_size + $r.r_thickness;
+                    $r.countdown_to_time = new Date(2021, 8, 27).getTime();
+                    $r.go();
+                },
+                ctx: null,
+                go: function () {
+                    let idx = 0;
+                    let $r = ringer;
+                    $r.time = new Date().getTime() - $r.countdown_to_time;
+                    for (let r_key in $r.rings) $r.unit(idx++, r_key, $r.rings[r_key]);
+                    setTimeout($r.go, $r.update_interval);
+                },
+                unit: function (idx, label, ring) {
+                    let $r = ringer;
+                    let x,
+                        y,
+                        value,
+                        ring_secs = ring.s;
+                    value = parseFloat($r.time / ring_secs);
+                    $r.time -= Math.round(parseInt(value)) * ring_secs;
+                    value = Math.abs(value);
+                    x = $r.r_size * 0.5 + $r.r_thickness * 0.5;
+                    x += +(idx * ($r.r_size + $r.r_spacing + $r.r_thickness));
+                    y = $r.r_size * 0.5;
+                    y += $r.r_thickness * 0.5;
+                    let degrees = 360 - (value / ring.max) * 360.0;
+                    let endAngle = degrees * (Math.PI / 180);
+                    $r.ctx.save();
+                    $r.ctx.translate(x, y);
+                    $r.ctx.clearRect($r.actual_size * -0.5, $r.actual_size * -0.5, $r.actual_size, $r.actual_size);
+                    $r.ctx.strokeStyle = "rgba(237, 237, 237)";
+                    $r.ctx.beginPath();
+                    $r.ctx.arc(0, 0, $r.r_size / 2, 0, 2 * Math.PI, 2);
+                    $r.ctx.lineWidth = $r.r_thickness;
+                    $r.ctx.stroke();
+                    $r.ctx.strokeStyle = "#3273dc";
+                    $r.ctx.beginPath();
+                    $r.ctx.arc(0, 0, $r.r_size / 2, 0, endAngle, 1);
+                    $r.ctx.lineWidth = $r.r_thickness;
+                    $r.ctx.stroke();
+                    $r.ctx.fillStyle = "black";
+                    $r.ctx.font = "12px monospace";
+                    $r.ctx.fillText(label, 0, 23);
+                    $r.ctx.fillText(label, 0, 23);
+                    $r.ctx.font = "bold 40px monospace";
+                    $r.ctx.fillText(Math.floor(value), 0, 10);
+                    $r.ctx.restore();
+                },
             };
-            window.appJSLoaded = loadScriptAsync("/js/app.js");
-            if ("serviceWorker" in navigator) {
-                window.addEventListener("load", function () {
-                    navigator.serviceWorker.register("/sw.en.js", { scope: "/en" });
-                });
-            }
-            window.ready = function (fn) {
-                if (document.readyState !== "loading") {
-                    fn();
-                } else {
-                    document.addEventListener("DOMContentLoaded", fn);
-                }
-            };
-            let triggerEvent = ["keydown", "mousemove", "touchmove", "touchstart", "touchend", "wheel"];
-            triggerEvent.forEach(function (e) {
-                window.addEventListener(e, triggerListener);
-            });
-            function triggerListener() {
-                triggerEvent.forEach(function (e) {
-                    window.removeEventListener(e, triggerListener);
-                });
-                window.ready(function () {
-                    loadScriptAsync("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7957101469761625", 0, true);
-                });
-            }
-            window.ready(function () {
-                setTimeout(function () {
-                    triggerListener();
-                }, 3000);
-            });
+            ringer.init();
         </script>
-        <!--noindex-->
-        <div class="feedback">
-            <div class="feedback__button"><button data-feedback-toggle class="feedback__button-text">Feedback</button></div>
-            <div class="feedback__form">
-                <span class="feedback__form-heading heading heading--sm">Feedback form</span><button aria-label="Feedback" data-feedback-close class="feedback__form-close icon icon-close"></button>
-                <form id="feedback-form" role="form" action="https://calculat.io/api/v1/feedback" class="feedback__form-form">
-                    <div class="feedback__hi">Hi! What do you think?</div>
-                    <div class="field">
-                        <p class="control"><input aria-label="Name" name="name" placeholder="Name (Optional)" type="text" class="feedback__form-input input" /></p>
-                    </div>
-                    <div class="field">
-                        <p class="control"><input aria-label="E-mail" name="email" placeholder="E-mail (Optional)" type="email" class="feedback__form-input input" /></p>
-                    </div>
-                    <div class="field">
-                        <p class="control"><textarea aria-label="Message" name="text" required maxlength="2000" placeholder="Enter your message..." rows="2" class="feedback__form-textarea textarea"></textarea></p>
-                        <p class="help hide"></p>
-                    </div>
-                    <p class="control"><button class="button is-success">Send</button></p>
-                    <input type="hidden" name="locale" value="en" />
-                </form>
-            </div>
-        </div>
-        <!--/noindex-->
-        <nav class="navbar is-light" aria-label="main navigation">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="https://calculat.io/en"><img loading="lazy" width="2560" height="301" src="https://calculat.io/media/logo.svg" alt="Calculatio" /></a>
-                    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
-                </div>
-                <div id="navMenu" class="navbar-menu">
-                    <div class="navbar-start">
-                        <a class="navbar-item is-active" href="https://calculat.io/en/date">
-                            <span class="icon"><i class="icon-calendar"></i></span> Dates
-                        </a>
-                        <a class="navbar-item" href="https://calculat.io/en/number">
-                            <span class="icon"><i class="icon-sort-numeric-asc"></i></span> Numbers
-                        </a>
-                        <a class="navbar-item" href="https://calculat.io/en/temperature">
-                            <span class="icon"><i class="icon-thermometer"></i></span> Temperature
-                        </a>
-                        <a class="navbar-item" href="https://calculat.io/en/length">
-                            <span class="icon"><i class="icon-length"></i></span> Length
-                        </a>
-                        <a class="navbar-item" href="https://calculat.io/en/other">
-                            <span class="icon"><i class="icon-magic-wand"></i></span> Other
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="section">
-            <div class="container">
-                <div class="grid-columns">
-                    <div class="grid-column">
-                        <nav class="breadcrumb margin-bottom--x0_5" aria-label="breadcrumbs">
-                            <ul>
-                                <li>
-                                    <a href="https://calculat.io/en"><span>Home</span></a>
-                                </li>
-                                <li>
-                                    <a href="https://calculat.io/en/date">
-                                        <span class="icon is-small"><i class="icon-calendar" aria-hidden="true"></i></span><span>Date Calculators</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://calculat.io/en/date/count">
-                                        <span class="icon is-small"><i class="icon-calendar-plus" aria-hidden="true"></i></span><span>Add or Subtract Date</span>
-                                    </a>
-                                </li>
-                                <li class="is-active">
-                                    <a href="https://calculat.io/en/date/count/1--days--from--26-september-2021">
-                                        <span class="icon is-small"><i class="icon-magic-wand" aria-hidden="true"></i></span><span>1 day From September 26, 2021</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="calculator">
-                            <div class="hero is-small margin-bottom--x1_5 is-primary has-text-centered">
-                                <div class="hero-body"><h1 class="title">What Date is 1 day From September 26, 2021?</h1></div>
-                            </div>
-                            <div class="calc67-container message is-primary is-paddingless calc67--1 sticky-calc67 margin-bottom--x1_5">
-                                <ins class="adsbygoogle" style="display: block !important;" data-ad-client="ca-pub-7957101469761625" data-ad-slot="3149069371" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                            </div>
-                            <script>
-                                (adsbygoogle = window.adsbygoogle || []).push({});
-                                let stickyAdContainer = document.querySelector(".sticky-calc67");
-                                let stickyAd = stickyAdContainer.querySelector(".adsbygoogle");
-                                let t = setInterval(runFunction, 200);
-                                let counter = 1;
-                                function runFunction() {
-                                    if (!stickyAd || window.innerWidth < 1280) {
-                                        clearInterval(t);
-                                        return;
-                                    }
-                                    if (stickyAd.dataset.adStatus === "filled") {
-                                        clearInterval(t);
-                                        makeStickyFor2Sec();
-                                    }
-                                    if (counter++ > 50) {
-                                        clearInterval(t);
-                                    }
-                                }
-                                function makeStickyFor2Sec() {
-                                    stickyAdContainer.classList.add("sticky-calc67--sticky");
-                                    setTimeout(function () {
-                                        stickyAdContainer.classList.remove("sticky-calc67--sticky");
-                                    }, 2000);
-                                }
-                            </script>
-                            <div class="message is-success">
-                                <div class="message-header message-header--main"><div class="message-title">&quot;Add or Subtract Date&quot; Calculator</div></div>
-                                <div class="message-body is-size-4 is-paddingless">
-                                    <form data-calc-form target="_top" data-root="https://calculat.io/en/date/count" action="https://calculat.io/en/date/count">
-                                        <div class="form-group is-grouped-multiline field is-grouped is-grouped-centered">
-                                            <p class="control is-flex level is-size-4 label-field"><span>What Would Be</span></p>
-                                            <p title="Count" class="field-number control"><input name="count" class="width--120px input is-medium" type="number" placeholder="Number" min="0" max="2000000" step="0.01" value="1" /></p>
-                                            <div data-value="days" class="control select is-medium field-select">
-                                                <select name="period" title="render.choose_period">
-                                                    <option selected value="days">Days</option>
-                                                    <option value="weeks">Weeks</option>
-                                                    <option value="months">Months</option>
-                                                    <option value="years">Years</option>
-                                                </select>
-                                            </div>
-                                            <div data-value="from" class="control select is-medium field-select">
-                                                <select name="action" title="">
-                                                    <option selected value="from">From</option>
-                                                    <option value="before">Before</option>
-                                                </select>
-                                            </div>
-                                            <div title="Date From" class="control field-datepicker has-addons">
-                                                <p class="has-icons-left control">
-                                                    <input id="datepicker_1" name="date_from" class="input is-medium" type="text" placeholder="Choose Date" value="26-september-2021" />
-                                                    <span class="icon is-medium is-left"><i class="icon-calendar"></i></span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <p class="control calc-button">
-                                            <button data-calc-button type="submit" class="button is-medium is-success">
-                                                <span class="icon is-medium"><span class="icon-calculator is-flex"></span></span><span>Calculate</span>
-                                            </button>
-                                        </p>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="message answer is-primary">
-                                <div class="message-header message-header--main"><h2 class="message-title">Answer for &quot;What was 1 day From September 26, 2021?&quot;</h2></div>
-                                <div class="message-body is-size-4">
-                                    <p class="is-size-5 mb-2">1 day From September 26, 2021 was:</p>
-                                    <pre class="answer-block">Monday, <strong>September 27, 2021</strong></pre>
-                                </div>
-                            </div>
-                            <div class="calc67-container message is-primary is-paddingless calc67--3">
-                                <ins class="adsbygoogle-off" style="display: block !important;" data-ad-client="ca-pub-7957101469761625" data-ad-slot="6929296581" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                            </div>
-                            <script>
-                                let mobileAd = document.querySelector(".calc67--3 .adsbygoogle-off");
-                                if (window.innerWidth <= 769) {
-                                    mobileAd.classList.add("adsbygoogle");
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                }
-                            </script>
-                            <div class="message is-primary timeline">
-                                <div class="message-header message-header--main"><h2 class="message-title">Timeline</h2></div>
-                                <div class="message-body is-size-4">
-                                    <div class="timeline__dates">
-                                        <div class="timeline__date">September 26, 2021</div>
-                                        <div class="timeline__info">1 day</div>
-                                        <div class="timeline__date">September 27, 2021</div>
-                                    </div>
-                                    <div class="timeline__periods" style="background: repeating-linear-gradient(90deg, transparent, transparent 1px, #3298dc 1px, #3298dc 100%);"></div>
-                                </div>
-                            </div>
-                            <div class="message is-primary">
-                                <div class="message-header message-header--main"><h2 class="message-title">About a day: September 27, 2021</h2></div>
-                                <div class="message-body is-size-4">
-                                    <ul>
-                                        <li class="is-size-4"><strong>September 27, 2021</strong> Was <strong> Monday </strong> (Weekday)</li>
-                                        <li class="is-size-4">This day is on <strong>40 (fortieth)</strong> week of year 2021</li>
-                                        <li class="is-size-4">This is <strong>270th (two hundred seventieth)</strong> Day of the Year</li>
-                                        <li class="is-size-4"><strong>2021</strong> is not a Leap Year (365 Days)</li>
-                                        <li class="is-size-4"><a href="https://calculat.io/en/date/days-in-month/september--2021">Days count in September 2021</a>: <strong>30</strong></li>
-                                        <li class="is-size-4">
-                                            <a href="https://calculat.io/en/other/zodiac/27-september-2021"> The Zodiac Sign of <strong>September 27, 2021</strong></a> is <strong>Libra</strong> (libra)
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="message is-primary">
-                                <div class="message-header message-header--main"><h2 class="message-title">September 2021 Calendar</h2></div>
-                                <div class="message-body is-size-4 is-paddingless">
-                                    <div class="calendar" id="calendar_1"><input style="display: none;" id="calendar_1_input" /></div>
-                                    <script>
-                                        appJSLoaded.then(function () {
-                                            window.getCalendar("en", "27-09-2021", "calendar_1", "calendar_1_input");
-                                        });
-                                    </script>
-                                </div>
-                            </div>
-                            <div class="message is-primary">
-                                <div class="message-header message-header--main"><h2 class="message-title">Countdown From September 27, 2021:</h2></div>
-                                <div class="message-body is-size-4"><canvas class="countdown" id="countdown"></canvas></div>
-                            </div>
-                            <script>
-                                let ringer = {
-                                    rings: { Days: { s: 86400000, max: 365 }, Hours: { s: 3600000, max: 24 }, Minutes: { s: 60000, max: 60 }, Seconds: { s: 1000, max: 60 } },
-                                    r_count: 4,
-                                    r_spacing: 10,
-                                    r_size: 100,
-                                    r_thickness: 5,
-                                    update_interval: 500,
-                                    init: function () {
-                                        let $r = ringer;
-                                        $r.size = { w: ($r.r_size + $r.r_thickness) * $r.r_count + $r.r_spacing * ($r.r_count - 1), h: $r.r_size + $r.r_thickness };
-                                        $r.cvs = document.getElementById("countdown");
-                                        $r.cvs.setAttribute("width", $r.size.w);
-                                        $r.cvs.setAttribute("height", $r.size.h);
-                                        $r.ctx = $r.cvs.getContext("2d");
-                                        $r.ctx.textAlign = "center";
-                                        $r.actual_size = $r.r_size + $r.r_thickness;
-                                        $r.countdown_to_time = new Date(2021, 8, 27).getTime();
-                                        $r.go();
-                                    },
-                                    ctx: null,
-                                    go: function () {
-                                        let idx = 0;
-                                        let $r = ringer;
-                                        $r.time = new Date().getTime() - $r.countdown_to_time;
-                                        for (let r_key in $r.rings) $r.unit(idx++, r_key, $r.rings[r_key]);
-                                        setTimeout($r.go, $r.update_interval);
-                                    },
-                                    unit: function (idx, label, ring) {
-                                        let $r = ringer;
-                                        let x,
-                                            y,
-                                            value,
-                                            ring_secs = ring.s;
-                                        value = parseFloat($r.time / ring_secs);
-                                        $r.time -= Math.round(parseInt(value)) * ring_secs;
-                                        value = Math.abs(value);
-                                        x = $r.r_size * 0.5 + $r.r_thickness * 0.5;
-                                        x += +(idx * ($r.r_size + $r.r_spacing + $r.r_thickness));
-                                        y = $r.r_size * 0.5;
-                                        y += $r.r_thickness * 0.5;
-                                        let degrees = 360 - (value / ring.max) * 360.0;
-                                        let endAngle = degrees * (Math.PI / 180);
-                                        $r.ctx.save();
-                                        $r.ctx.translate(x, y);
-                                        $r.ctx.clearRect($r.actual_size * -0.5, $r.actual_size * -0.5, $r.actual_size, $r.actual_size);
-                                        $r.ctx.strokeStyle = "rgba(237, 237, 237)";
-                                        $r.ctx.beginPath();
-                                        $r.ctx.arc(0, 0, $r.r_size / 2, 0, 2 * Math.PI, 2);
-                                        $r.ctx.lineWidth = $r.r_thickness;
-                                        $r.ctx.stroke();
-                                        $r.ctx.strokeStyle = "#3273dc";
-                                        $r.ctx.beginPath();
-                                        $r.ctx.arc(0, 0, $r.r_size / 2, 0, endAngle, 1);
-                                        $r.ctx.lineWidth = $r.r_thickness;
-                                        $r.ctx.stroke();
-                                        $r.ctx.fillStyle = "black";
-                                        $r.ctx.font = "12px monospace";
-                                        $r.ctx.fillText(label, 0, 23);
-                                        $r.ctx.fillText(label, 0, 23);
-                                        $r.ctx.font = "bold 40px monospace";
-                                        $r.ctx.fillText(Math.floor(value), 0, 10);
-                                        $r.ctx.restore();
-                                    },
-                                };
-                                ringer.init();
-                            </script>
-                            <div class="message is-primary">
-                                <div class="message-header message-header--main"><div class="message-title">1 day it is also</div></div>
-                                <div class="message-body is-size-4">
-                                    <pre
-                                        class=""
-                                    ><ul><li><strong>1.0</strong> Day</li><li class="has-text-weight-normal is-size-5">or</li><li><strong>24.0</strong> Hours</li><li class="has-text-weight-normal is-size-5">or</li><li><strong>1440.0</strong> Minutes</li><li class="has-text-weight-normal is-size-5">or</li><li><strong>86400</strong> Seconds</li></ul></pre>
-                                </div>
-                            </div>
-                            <div class="message is-primary">
-                                <div class="message-header message-header--main"><h2 class="message-title">If you want to count only Workdays</h2></div>
-                                <div class="message-body is-size-4">
-                                    <p class="is-size-5 mb-2">1 day From September 26, 2021 was: (Only Weekdays)</p>
-                                    <pre class="answer-block">Monday, <strong>September 27, 2021</strong></pre>
-                                </div>
-                            </div>
-                            <div class="message is-primary timeline">
-                                <div class="message-header message-header--main"><h2 class="message-title">Timeline</h2></div>
-                                <div class="message-body is-size-4">
-                                    <div class="timeline__dates">
-                                        <div class="timeline__date">September 26, 2021</div>
-                                        <div class="timeline__info">1 day</div>
-                                        <div class="timeline__date">September 27, 2021</div>
-                                    </div>
-                                    <div class="timeline__periods" style="background: repeating-linear-gradient(90deg, transparent, transparent 1px, #3298dc 1px, #3298dc 100%);"></div>
-                                </div>
-                            </div>
-                            <div class="message is-primary">
-                                <div class="message-header message-header--main"><h2 class="message-title">About a day: September 27, 2021</h2></div>
-                                <div class="message-body is-size-4">
-                                    <ul>
-                                        <li class="is-size-4"><strong>September 27, 2021</strong> Was <strong> Monday </strong> (Weekday)</li>
-                                        <li class="is-size-4">This day is on <strong>40 (fortieth)</strong> week of year 2021</li>
-                                        <li class="is-size-4">This is <strong>270th (two hundred seventieth)</strong> Day of the Year</li>
-                                        <li class="is-size-4"><strong>2021</strong> is not a Leap Year (365 Days)</li>
-                                        <li class="is-size-4"><a href="https://calculat.io/en/date/days-in-month/september--2021">Days count in September 2021</a>: <strong>30</strong></li>
-                                        <li class="is-size-4">
-                                            <a href="https://calculat.io/en/other/zodiac/27-september-2021"> The Zodiac Sign of <strong>September 27, 2021</strong></a> is <strong>Libra</strong> (libra)
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="message is-primary">
-                                <div class="message-header message-header--main"><h2 class="message-title">September 2021 Calendar</h2></div>
-                                <div class="message-body is-size-4 is-paddingless">
-                                    <div class="calendar" id="calendar_2"><input style="display: none;" id="calendar_2_input" /></div>
-                                    <script>
-                                        appJSLoaded.then(function () {
-                                            window.getCalendar("en", "27-09-2021", "calendar_2", "calendar_2_input");
-                                        });
-                                    </script>
-                                </div>
-                            </div>
-                            <div class="message is-primary about-calc">
-                                <div class="message-header message-header--main"><h2 class="message-title">About &quot;Add or Subtract Date&quot; Calculator</h2></div>
-                                <div class="message-body is-size-6">
-                                    This online date calculator will help you calculate what day was or will be After/Before any number of Days/Weeks/Months or Years from today or any given date. For example,
-                                    <a href="https://calculat.io/en/date/count/1--days--from--26-september-2021">What was 1 day From September 26, 2021?</a> Enter the quantity (e.g. '1'), select the period (e.g. 'day'), the counting
-                                    direction (e.g. 'From') and pick the starting day (e.g. 'September 26, 2021'). After that, click the 'Calculate' button.
-                                </div>
-                            </div>
-                            <div class="message is-success">
-                                <div class="message-header message-header--main"><h2 class="message-title">&quot;Add or Subtract Date&quot; Calculator</h2></div>
-                                <div class="message-body is-size-4 is-paddingless">
-                                    <form data-calc-form target="_top" data-root="https://calculat.io/en/date/count" action="https://calculat.io/en/date/count">
-                                        <div class="form-group is-grouped-multiline field is-grouped is-grouped-centered">
-                                            <p class="control is-flex level is-size-4 label-field"><span>What Would Be</span></p>
-                                            <p title="Count" class="field-number control"><input name="count" class="width--120px input is-medium" type="number" placeholder="Number" min="0" max="2000000" step="0.01" value="1" /></p>
-                                            <div data-value="days" class="control select is-medium field-select">
-                                                <select name="period" title="render.choose_period">
-                                                    <option selected value="days">Days</option>
-                                                    <option value="weeks">Weeks</option>
-                                                    <option value="months">Months</option>
-                                                    <option value="years">Years</option>
-                                                </select>
-                                            </div>
-                                            <div data-value="from" class="control select is-medium field-select">
-                                                <select name="action" title="">
-                                                    <option selected value="from">From</option>
-                                                    <option value="before">Before</option>
-                                                </select>
-                                            </div>
-                                            <div title="Date From" class="control field-datepicker has-addons">
-                                                <p class="has-icons-left control">
-                                                    <input id="datepicker_2" name="date_from" class="input is-medium" type="text" placeholder="Choose Date" value="26-september-2021" />
-                                                    <span class="icon is-medium is-left"><i class="icon-calendar"></i></span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <p class="control calc-button">
-                                            <button data-calc-button type="submit" class="button is-medium is-success">
-                                                <span class="icon is-medium"><span class="icon-calculator is-flex"></span></span><span>Calculate</span>
-                                            </button>
-                                        </p>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="message is-primary">
-                                <div class="message-header message-header--main"><h2 class="message-title">Conversion Table</h2></div>
-                                <div class="message-body is-size-4">
-                                    <div class="table-container is-size-6">
-                                        <table class="table is-striped is-fullwidth is-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>day From September 26, 2021</th>
-                                                    <th>Answer</th>
-                                                    <th>Workdays</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="is-highlighted">
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/1--days--from--26-september-2021">1 day</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/27-september-2021">September 27, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/27-september-2021">September 27, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/2--days--from--26-september-2021">2 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/28-september-2021">September 28, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/28-september-2021">September 28, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/3--days--from--26-september-2021">3 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/29-september-2021">September 29, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/29-september-2021">September 29, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/4--days--from--26-september-2021">4 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/30-september-2021">September 30, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/30-september-2021">September 30, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/5--days--from--26-september-2021">5 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/1-october-2021">October 1, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/1-october-2021">October 1, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/6--days--from--26-september-2021">6 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/2-october-2021">October 2, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/4-october-2021">October 4, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/7--days--from--26-september-2021">7 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/3-october-2021">October 3, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/5-october-2021">October 5, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/8--days--from--26-september-2021">8 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/4-october-2021">October 4, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/6-october-2021">October 6, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/9--days--from--26-september-2021">9 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/5-october-2021">October 5, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/7-october-2021">October 7, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/10--days--from--26-september-2021">10 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/6-october-2021">October 6, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/8-october-2021">October 8, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/11--days--from--26-september-2021">11 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/7-october-2021">October 7, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/11-october-2021">October 11, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/12--days--from--26-september-2021">12 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/8-october-2021">October 8, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/12-october-2021">October 12, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/13--days--from--26-september-2021">13 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/9-october-2021">October 9, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/13-october-2021">October 13, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/14--days--from--26-september-2021">14 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/10-october-2021">October 10, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/14-october-2021">October 14, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/15--days--from--26-september-2021">15 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/11-october-2021">October 11, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/15-october-2021">October 15, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/16--days--from--26-september-2021">16 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/12-october-2021">October 12, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/18-october-2021">October 18, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/17--days--from--26-september-2021">17 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/13-october-2021">October 13, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/19-october-2021">October 19, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/18--days--from--26-september-2021">18 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/14-october-2021">October 14, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/20-october-2021">October 20, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/19--days--from--26-september-2021">19 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/15-october-2021">October 15, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/21-october-2021">October 21, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/20--days--from--26-september-2021">20 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/16-october-2021">October 16, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/22-october-2021">October 22, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>21 Days</td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/17-october-2021">October 17, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/25-october-2021">October 25, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>22 Days</td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/18-october-2021">October 18, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/26-october-2021">October 26, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>23 Days</td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/19-october-2021">October 19, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/27-october-2021">October 27, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>24 Days</td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/20-october-2021">October 20, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/28-october-2021">October 28, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/25--days--from--26-september-2021">25 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/21-october-2021">October 21, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/29-october-2021">October 29, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>26 Days</td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/22-october-2021">October 22, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/1-november-2021">November 1, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>27 Days</td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/23-october-2021">October 23, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/2-november-2021">November 2, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>28 Days</td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/24-october-2021">October 24, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/3-november-2021">November 3, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>29 Days</td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/25-october-2021">October 25, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/4-november-2021">November 4, 2021</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/count/30--days--from--26-september-2021">30 Days</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/26-october-2021">October 26, 2021</a></td>
-                                                    <td class="has-link"><a href="https://calculat.io/en/date/how-many-until/5-november-2021">November 5, 2021</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message is-primary">
-                                <div class="message-header message-header--main"><h2 class="message-title">FAQ</h2></div>
-                                <div class="message-body is-size-4">
-                                    <div class="faq" itemscope itemtype="https://schema.org/FAQPage">
-                                        <div class="faq__question" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                            <h3 itemprop="name" class="closed">What was 1 day From September 26, 2021?</h3>
-                                            <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">September 27, 2021</div></div>
-                                        </div>
-                                        <div class="faq__question" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                            <h3 itemprop="name" class="closed">What was 1 Workdays From September 26, 2021?</h3>
-                                            <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">September 27, 2021</div></div>
-                                        </div>
-                                        <div class="faq__question" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                            <h3 itemprop="name" class="closed">What day of week is September 26, 2021?</h3>
-                                            <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Sunday</div></div>
-                                        </div>
-                                        <div class="faq__question" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                            <h3 itemprop="name" class="closed">What day of week is September 27, 2021?</h3>
-                                            <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Monday</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-column">
-                        <aside class="menu is-hidden-mobile">
-                            <div class="calc67-container message is-primary is-paddingless vertical-calc67">
-                                <ins class="adsbygoogle-off" style="display: block !important;" data-ad-client="ca-pub-7957101469761625" data-ad-slot="9519036600" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                            </div>
-                            <script>
-                                let verticalAd = document.querySelector(".vertical-calc67 .adsbygoogle-off");
-                                if (!(window.innerWidth < 769)) {
-                                    verticalAd.classList.add("adsbygoogle");
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                }
-                            </script>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer is-flex flex-center">
-            <div class="has-text-centered is-flex flex-center">
-                <span class="flags">
-                    <a title="Russian" class="flag--faded flag" href="https://calculat.io/ru/date/count/1--days--from--26-september-2021"><img loading="lazy" width="24" height="24" src="/media/flags/ru.png" alt="Russian" /></a>
-                </span>
-                <span class="footer__copy"><a href="/">Calculat.IO</a><span class="footer-side-margin">© 2021</span></span><span><a href="https://calculat.io/en/privacy-policy-rules">Privacy/Rules</a></span>
-                <span class="footer-feedback"><a data-feedback href="#">Contact Us</a></span>
-            </div>
-            <script>
-                appJSLoaded.then(function () {
-                    let field_date_from = document.getElementById("datepicker_1");
-                    let picker_date_from = new window.Pikaday({
-                        field: field_date_from,
-                        format: "MMMM DD, YYYY",
-                        onSelect: function () {
-                            field_date_from.setAttribute("value", this.getMoment().locale("en").format("DD-MMMM-YYYY").toLowerCase());
-                        },
-                        i18n: window.calculatio.locales.en,
-                    });
-                    picker_date_from.setMoment(moment(field_date_from.getAttribute("value"), "DD-MMMM-YYYY"));
-                });
-            </script>
-            <script>
-                appJSLoaded.then(function () {
-                    let field_date_from = document.getElementById("datepicker_2");
-                    let picker_date_from = new window.Pikaday({
-                        field: field_date_from,
-                        format: "MMMM DD, YYYY",
-                        onSelect: function () {
-                            field_date_from.setAttribute("value", this.getMoment().locale("en").format("DD-MMMM-YYYY").toLowerCase());
-                        },
-                        i18n: window.calculatio.locales.en,
-                    });
-                    picker_date_from.setMoment(moment(field_date_from.getAttribute("value"), "DD-MMMM-YYYY"));
-                });
-            </script>
-            <script>
-                const adsenseObserver = new IntersectionObserver(function (entries, imgObserver) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            const lazyAd = entry.target;
-                            lazyAd.classList.add("adsbygoogle");
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                            adsenseObserver.unobserve(lazyAd);
-                        }
-                    });
-                });
-                document.querySelectorAll(".adsbygoogle-lazy").forEach(function (ad) {
-                    return adsenseObserver.observe(ad);
-                });
-            </script>
-            <script>
-                document.querySelectorAll("[data-calc-form]").forEach(function (e) {
-                    let form = e;
-                    let calcButton = form.querySelector("[data-calc-button]");
-                    calcButton.addEventListener("click", function (e) {
-                        e.preventDefault();
-                        document.querySelectorAll('[name="count"]').forEach(function (e) {
-                            e.value = e.value;
-                        });
-                        document.querySelectorAll('[name="period"]').forEach(function (e) {
-                            e.value = e.value;
-                        });
-                        document.querySelectorAll('[name="action"]').forEach(function (e) {
-                            e.value = e.value;
-                        });
-                        document.querySelectorAll('[name="date_from"]').forEach(function (e) {
-                            e.value = e.getAttribute("value");
-                        });
-                        form.submit();
-                    });
-                });
-            </script>
-        </footer>
     </body>
 </html>
