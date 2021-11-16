@@ -15,7 +15,7 @@
         <link rel="preload" href="/fonts/calculatio.woff?4" as="font" crossorigin="anonymous" />
         <link rel="preload" href="/fonts/RobotoMono-Regular.woff2" as="font" crossorigin="anonymous" />
         <link rel="preload" href="/fonts/RobotoMono-Bold.woff2" as="font" crossorigin="anonymous" />
-        <link rel="stylesheet" href="/css/app.css?id=037795fce3bcb058987c" />
+        <link rel="stylesheet" href="/css/app.css" />
         <style>
             .calc67-container:before {
                 content: "Advertisement";
@@ -92,7 +92,7 @@
                     }, delay);
                 });
             };
-            window.appJSLoaded = loadScriptAsync("/js/app.js?id=5d9bc1e4f5cae32ff4a8");
+            window.appJSLoaded = loadScriptAsync("/js/app.js");
             if ("serviceWorker" in navigator) {
                 window.addEventListener("load", function () {
                     navigator.serviceWorker.register("/sw.en.js", { scope: "/en" });
